@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  --vscode-font-family:
+    'Segoe UI Variable Text', 'Segoe UI', 'Microsoft YaHei', system-ui, sans-serif;
+  --vscode-editor-font-family: 'Cascadia Code', Consolas, monospace;
+  --vscode-foreground: #34352f;
+  --vscode-editor-background: #faf9f5;
+  --vscode-sideBar-background: #f2f0e8;
+  --vscode-panel-border: #e4e2d8;
+  --vscode-input-background: #fffefa;
+  --vscode-input-foreground: #34352f;
+  --vscode-input-border: #d9d9cf;
+  --vscode-descriptionForeground: #707168;
+  --vscode-button-background: #286879;
+  --vscode-button-foreground: #fff;
+  --vscode-button-secondaryBackground: #f1f0e9;
+  --vscode-button-secondaryForeground: #41453e;
+  --vscode-focusBorder: #34849b;
+  --vscode-list-activeSelectionBackground: #deedf0;
+  --vscode-list-activeSelectionForeground: #245b6a;
+  --vscode-errorForeground: #ad4242;
+  --vscode-textBlockQuote-background: #eff5f3;
+  --vscode-progressBar-background: #5794a3;
+  --vscode-button-border: #dedfd5;
+  --surface: #fffefa;
+  --surface-soft: #f5f4ed;
+  --hero: #e8f0eb;
+  --hero-ink: #304a40;
+  --sky: #dcecf0;
+  --sand: #f5e7cb;
+  --green: #3d6b53;
+  --green-bg: #e6efe5;
+  --amber: #8a622b;
+  --amber-bg: #f7edd7;
+  --red-bg: #f8e8e3;
+  --shadow: 0 4px 18px #33352404;
+  --radius: 16px;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --vscode-foreground: #eeeae0;
+  --vscode-editor-background: #242622;
+  --vscode-sideBar-background: #20221e;
+  --vscode-panel-border: #42453b;
+  --vscode-input-background: #2c2f28;
+  --vscode-input-foreground: #eeeae0;
+  --vscode-input-border: #5c6052;
+  --vscode-descriptionForeground: #b1b3a5;
+  --vscode-button-background: #9bcbd8;
+  --vscode-button-foreground: #193b45;
+  --vscode-button-secondaryBackground: #383c32;
+  --vscode-button-secondaryForeground: #e6e6d9;
+  --vscode-focusBorder: #9bcbd8;
+  --vscode-list-activeSelectionBackground: #324950;
+  --vscode-list-activeSelectionForeground: #b8e1e9;
+  --vscode-errorForeground: #f4a59b;
+  --vscode-textBlockQuote-background: #303b32;
+  --vscode-progressBar-background: #9bcbd8;
+  --vscode-button-border: #515546;
+  --surface: #2c2f28;
+  --surface-soft: #30342c;
+  --hero: #343f33;
+  --hero-ink: #e0e8d6;
+  --sky: #324950;
+  --sand: #4b402c;
+  --green: #b2d6ad;
+  --green-bg: #354532;
+  --amber: #f0cd89;
+  --amber-bg: #493e29;
+  --red-bg: #4d3531;
+  --shadow: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not([data-theme='dark']) {
+    color-scheme: dark;
+    --vscode-foreground: #eeeae0;
+    --vscode-editor-background: #242622;
+    --vscode-sideBar-background: #20221e;
+    --vscode-panel-border: #42453b;
+    --vscode-input-background: #2c2f28;
+    --vscode-input-foreground: #eeeae0;
+    --vscode-input-border: #5c6052;
+    --vscode-descriptionForeground: #b1b3a5;
+    --vscode-button-background: #9bcbd8;
+    --vscode-button-foreground: #193b45;
+    --vscode-button-secondaryBackground: #383c32;
+    --vscode-button-secondaryForeground: #e6e6d9;
+    --vscode-focusBorder: #9bcbd8;
+    --vscode-list-activeSelectionBackground: #324950;
+    --vscode-list-activeSelectionForeground: #b8e1e9;
+    --vscode-errorForeground: #f4a59b;
+    --vscode-textBlockQuote-background: #303b32;
+    --vscode-progressBar-background: #9bcbd8;
+    --vscode-button-border: #515546;
+    --surface: #2c2f28;
+    --surface-soft: #30342c;
+    --hero: #343f33;
+    --hero-ink: #e0e8d6;
+    --sky: #324950;
+    --sand: #4b402c;
+    --green: #b2d6ad;
+    --green-bg: #354532;
+    --amber: #f0cd89;
+    --amber-bg: #493e29;
+    --red-bg: #4d3531;
+    --shadow: none;
+  }
+}

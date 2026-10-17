@@ -1,0 +1,41 @@
+{
+  "name": "pawshift-desktop",
+  "productName": "PawShift",
+  "version": "0.3.3",
+  "description": "PawShift独立桌面版：Codex 任务管理与调度",
+  "author": "PawShift",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "private": true,
+  "main": "dist/src/webview-backend.js",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "node scripts/clean-build.cjs && tsc -p . && node scripts/copy.mjs",
+    "dev": "npm run package:dir && npm start",
+    "start": "node scripts/launch-webview.cjs",
+    "test": "npm run build && node --test dist/test/*.test.js && npm run test:native",
+    "test:desktop": "npm run package:dir && node scripts/webview-check.cjs",
+    "test:webview": "node scripts/webview-check.cjs",
+    "test:agent": "npm run build && node dist/scripts/agent-check.js",
+    "package": "npm run package:dir",
+    "package:dir": "npm run build && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-webview.ps1",
+    "verify:release": "node scripts/verify-release.cjs",
+    "probe": "node dist/scripts/probe.js",
+    "benchmark": "node dist/scripts/benchmark.js",
+    "icons": "node scripts/export-icons.cjs",
+    "test:native": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-native.ps1",
+    "test:pause": "node scripts/webview-check.cjs --live-agent --pause-resume",
+    "test:resume": "node scripts/webview-check.cjs --live-agent --pause-resume --legacy-resume",
+    "archive": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/archive-project.ps1"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "jsdom": "26.1.0",
+    "playwright": "1.62.1",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3"
+  }
+}

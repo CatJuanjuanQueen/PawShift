@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+release-webview2/
+.build/
+backups/
+archives/
+docs/*.json
+docs/screenshots/
+docs/requirements-source.txt
+package-lock.json
+ui/*.svg
